@@ -1,0 +1,753 @@
+/*reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+/****police family***/
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(214, 202, 202);
+    background-image: url(img/etoilec.gif);
+    font-size: large;
+  }
+/*Style section Logo + section banner Rechercher*/
+  @keyframes example {
+    0%   {background-color: ghostwhite;}
+    25%  {background-color: rgb(170, 158, 158);}
+    50%  {background-color: beige;}
+    100% {background-color: cadetblue;}
+  }
+
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+    float: right;
+    margin-top: 40px;
+    border-radius: 20px;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #9adeb6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: rgb(59, 190, 146);
+    color: black;
+  }
+
+  .logo{
+    height: 110px;
+    width: 600px;
+    margin: 20px 0px 0px 0px;
+    padding: 10px 0px 10px 0px; 
+    border: 2px solid black;
+    border-radius: 30%;
+    float: left;
+
+/*Animation Color banner*/
+
+    background-color: rgb(208,208,208);
+    animation-name: example;
+    animation-duration: 30s;
+  }
+
+/*Style section Mon Projet Banner*/
+
+.Banner{
+  min-height: 50vh;
+  background-image: url(img/phoyo3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  color: #ffffff;
+  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 80% 90%, 51% 90%, 20% 90%, 0 100%, 0% 35%, 0 0);
+}
+
+.section-projet{
+  float: right;
+  margin-right: 20px;
+}
+
+.projet{
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(208,208,208);
+  color: rgb(186, 4, 4);
+  padding: 14px 14px;
+  background-color: rgb(208,208,208);
+  animation-name: example;
+  animation-duration: 30s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 50px 0px 30px 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(17, 169, 169, 0.825);
+  min-width: 30px;
+  box-shadow: 10px 16px 16px 0px rgba(43, 41, 41, 0.2);
+  padding: 10px 10px;
+  z-index: 1;
+  text-align: center;
+  color: #211f1f;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin: 30px 0px 0px 30px;
+  border-radius: 25px;
+  width: 600px;
+  background-color: rgb(208,208,208);
+  animation-name: example;
+  animation-duration: 30s;
+}
+
+/* Style contenu du A propos*/
+
+.propos{
+  background-color: rgba(43, 59, 58, 0.892);
+  margin: 0px 20px 15px 20px;
+  padding: 40px 0px 0px 0px;
+  border-radius: 90px 250px;
+  width: 1500px;
+}
+
+h1{
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+  color: rgb(59, 190, 146);
+}
+
+h2{ 
+    margin: 30px 0px 30px 0px;
+    color: rgb(59, 190, 146);
+}
+/*Carte de visite*/
+
+.about{
+  text-align: center;
+  margin-right: 60px;
+}
+
+.donnes{
+  width: 290px;
+  height: 180px;
+  background: rgb(208,208,208);
+  transition: width 10s, height 10s, transform 10s;
+  position: relative;
+  margin: 50px 80px;
+  border-radius: 20px;
+  color: #000;
+  text-align: center; 
+}
+
+.donnes:hover{
+  width: 280px;
+  height: 200px;
+  transform: rotate(360deg);
+  border-radius: 20px;
+}
+
+li.titru{
+  padding: 20px;
+}
+
+img{
+  width: 650px;
+  height: 500px;
+  border: 1px solid transparent;
+  border-radius: 50px;  
+}
+
+/*Style section/Block container muther*/
+
+.img-mercado-imerir{
+    height: auto;
+    margin: 20px auto;
+    display: block;  
+}
+
+.muther{
+  background-image: url(img/Cea-mai-misterioasa-carte-din-lume1-800x450.webp);
+  color: rgb(15, 15, 15);
+  box-shadow: 20px 10px 5px cornflowerblue;
+  border-radius: 80px 50px 80px 50px;
+  border: transparent;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.row{
+  margin-bottom: 20px;
+  margin-right: 2px;
+}
+
+h3{
+  color: #0e0d0d;
+  padding: 40px 20px 40px 20px;
+  background-color: rgba(245, 245, 220, 0.514);
+  margin: 20px 90px;
+  border-radius: 40px;
+  border: 2px solid rgb(45, 44, 44);
+}
+
+/* Style section gauche*/
+
+.sec-gauche, .sec-droit{
+  border: 1px solid;
+}
+
+/*Styles section droite*/
+
+.sec-droit{
+  border-radius: 0px 0px 80px 0px;
+}
+
+h4{
+  background-color: rgba(4, 133, 120, 0.781);
+  padding: 5px 5px 5px 5px;
+  border-radius: 40px;
+  margin: 10px;
+  text-align: center;
+  color: #d9d1d1;
+}
+
+dl{
+  background-color: rgba(64, 224, 208, 0.555);
+  padding: 10px 2px 10px 8px;
+  border-radius: 30px;
+  margin: 20px 0px 20px 0px;
+}
+
+dt {
+  padding: 15px;
+}
+/*Style links/hover vers le formations*/
+
+a{
+  color: rgb(73, 5, 5); 
+  text-decoration: none;
+}
+
+a:hover{
+  color: #1d1c1c;
+  text-decoration: none;
+}
+
+/*Pour centrer la section*/
+
+section{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Styles Button voir plus Job d'éte*/
+
+button {
+  margin: 50px 0px 50px 300px; 
+}
+
+button:active {
+  background-color: #9adeb6;
+}
+
+.btn-primary {
+  padding: 15px 50px;
+  font-size: 18px;
+  border-radius: 25px;
+  box-shadow: 0px 2px 4px 2px rgb(49, 45, 45);
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 2px 4px 2px rgb(49, 45, 45);
+    background-color: rgba(15, 231, 213, 0.781);
+    color: #444;
+}
+
+.btn-primary::after {
+  background-color: #9adeb6;
+}
+
+/*Telechargement de mon CV*/
+
+.sec-cv {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: rgba(4, 133, 120, 0.781);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 25px;
+  margin: 20px auto;
+  border: 2px solid rgba(4, 133, 120, 0.781);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Effet hover */
+.sec-cv:hover {
+  background-color: rgba(15, 231, 213, 0.781);
+  color: #000;
+}
+
+/*Mon Aventure dans le Monde du Web*/
+
+.mes-sites {
+  background-color: rgba(43, 59, 58, 0.892);
+  margin: 0px 0px 15px 20px;
+  padding: 40px 0px 0px 0px;
+  border-radius: 20px; /* Réduit la bordure pour petits écrans */
+  width: 97%; /* S'adapte à la largeur de l'écran */
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(179, 170, 154);
+}
+
+/* Séparation avec des lignes horizontales */
+hr {
+  border: #b78989 solid 3px;
+  border-radius: 10px;
+  width: 80%; /* Ajustement de la taille de la ligne pour petits écrans */
+  margin: 10px auto; /* Centrage de la ligne */
+}
+
+/* Styles pour les images dans la section */
+.img-mes-sites {
+  height: auto; /* Rend la hauteur flexible */
+  width: 100%; /* L'image prend toute la largeur du conteneur */
+  max-width: 350px; /* Définit une largeur maximale */
+  margin: 20px auto; /* Centre l'image */
+  display: block;
+}
+
+/* Ajustement de la taille des sous-titres */
+h5 {
+  font-size: large;
+  text-align: center;
+  margin: 20px 0px; /* Moins de marge pour les petits écrans */
+  color: blanchedalmond;
+}
+
+/* Texte descriptif */
+.pharagrafe-description {
+  margin: 15px;
+  text-align: center;
+}
+
+/*Mon Univers de Créativité avec GIMP /  Carrousel d'image*/
+
+.pohotos-gimp{
+  margin-left: 100px;
+}
+
+.title-block {
+  background-color: rgba(4, 133, 120, 0.923);
+  padding: 30px 50px;
+  border-radius: 40px;
+  margin: 30px 10px;
+  text-align: center;
+  color: #d9d1d1;
+  font-style: italic;
+  font-size: xx-large;
+}
+
+div#slider { width: 80%; max-width: 1000px; }
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: center;
+  animation: 30s slidy infinite;
+}
+
+div#slider figure img { width: 20%; height: auto; float: left; }
+
+div#slider { width: 80%; max-width: 1000px; overflow: hidden }
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+/* Ajustement du logo */
+
+.img-logo{
+  padding: 25px;
+  margin: 0px 400px 160px;
+  text-align: center;
+}
+
+/* section Compétences Numériques*/
+.compt-numerique {
+  width: 1450px;
+  background-color: rgba(43, 59, 58, 0.892);
+  margin: 130px 25px 15px 20px;
+  padding: 40px 0px 0px 0px;
+  border-radius: 90px 250px;
+  
+  padding: 30px;
+}
+
+.compt-numerique, h2, h4 {
+  margin: 40px;
+}
+
+.compt-numerique img {
+  width: auto;
+  margin: 40px;
+}
+
+.h4-large-numerique {
+  font-size: x-large;
+}
+
+/*Formuler de contact*/
+.contact {
+  background-color: rgba(23, 62, 60, 0.941);
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Style des labels et des champs du formulaire */
+.contact label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;
+  color: #ffffff;
+}
+
+.contact input[type="text"], .contact input[type="email"], .contact textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact textarea {
+  height: 150px;
+}
+
+/* Style du bouton d'envoi */
+.contact .btn-primary {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #008cba;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact .btn-primary:hover {
+  background-color: #005f75;
+}
+
+/*Footer*/
+footer{
+  background-color: rgba(4, 133, 120, 0.926);
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.img-footer{
+  height: 100px;
+  margin: 30px;
+}
+
+/* Media Queries pour Responsiveness */
+@media screen and (max-width: 768px) {
+  /* Styles pour navbar */
+  #navbar {
+      float: none;
+      text-align: center;
+      margin-top: 20px;
+      display: flex;
+  }
+
+  #navbar a {
+      float: none;
+      display: block;
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  /* Logo */
+  .logo {
+      width: 80%;
+      height: auto;
+      margin: 10px auto;
+      display: block;
+  }
+
+  /* Banner */
+  .Banner {
+      clip-path: none;
+      background-attachment: scroll;
+  }
+
+.under-const{
+  width: 60%;
+      height: auto;
+      margin: 10px auto;
+      display: block;
+}
+
+  /* Section Projet */
+  .section-projet {
+      float: none;
+      margin: 0;
+      text-align: center;
+  }
+
+  .projet {
+      font-size: 16px;
+      padding: 10px;
+      display: flex;
+      display: none;
+  }
+
+  /*Section A propos*/
+
+.propos, p{
+  width: 100%;
+  font-size: 16px;
+  }
+
+  h1{
+    display: flex;
+    font-size:larger;
+  }
+  
+  .propos img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+/*Mercado Imerir*/
+
+.img-mercado-imerir {
+  margin: 10px auto;
+}
+
+/*Section Muther*/
+/*Formation et Experience*/
+
+h3{
+  width: 85%;
+}
+
+.sec-gauche{
+  display: none;
+}
+
+/*Mon CV*/
+
+.sec-cv {
+  font-size: 16px;
+  padding: 12px 25px;
+  width: 80%;
+}
+
+/*button 'voir plus' section job d'ete*/
+
+.btn-primary {
+  padding: 12px 40px;
+  font-size: 16px;
+  width: 80%;
+}
+
+/* Mon aventure*/
+.mes-sites {
+        padding: 20px; /* Réduit le padding pour les tablettes */
+    }
+
+    .img-mes-sites {
+        width: 80%; /* Réduit la taille de l'image pour les tablettes */
+        margin: 10px auto;
+    }
+
+    h5 {
+        font-size: medium; /* Réduit la taille des sous-titres pour les tablettes */
+    }
+
+    .pharagrafe-description {
+        font-size: 18px; /* Réduit la taille du texte descriptif */
+      }
+
+    hr {
+        width: 90%; /* Augmente la largeur des lignes de séparation sur tablette */
+    }
+
+    h4{
+      display: none;
+    }
+    
+      /* Contact */
+      .contact {
+          margin: 20px 10px;
+          padding: 20px;
+      }
+    
+      form {
+          margin: 20px;
+          width: auto; /* Ajuste pour être responsive */
+      }
+    
+      input,
+      textarea {
+          width: calc(100% - 20px); /* Ajuste la largeur des champs */
+      }    
+}
+
+/*mes creativites avec gimp*/
+
+.pohotos-gimp{
+  margin: 60px 40px;
+}
+
+.img-logo{
+  padding: 25px;
+  margin: 0px 0px 120px 50px;
+  text-align: center;
+}
+
+/* Pour les tablettes (écrans moyens) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /* Navbar */
+  #navbar {
+      float: none;
+      text-align: center;
+      margin-top: 20px;
+      display: flex;
+  }
+
+  #navbar a {
+      float: none;
+      display: block;
+      padding: 12px;
+      font-size: 15px;
+  }
+
+  /* Logo */
+  .logo {
+      width: 90%;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+  }
+
+  /* Section projet */
+  .section-projet {
+      float: none;
+      margin-right: 0;
+      text-align: center;
+  }
+
+  /* Dropdown */
+  .dropdown-content {
+      width: 90%;
+      margin: 0 auto;
+  }
+}
+
+/*section A propos*/
+
+.propos, p{
+  width: 100%;
+  font-size: 16px;
+  }
+
+  h1{
+    display: flex;
+  }
+  
+  .propos img{
+    height: auto;
+    display: flex;
+  }
+
+  .img-mercado-imerir {
+    margin: 5px auto;
+    width: 80%;
+}
+
+/*section mon cv*/
+
+.sec-cv {
+  font-size: 14px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+/*button 'voir plus' section job d'ete*/
+
+.btn-primary {
+  padding: 10px 30px;
+  font-size: 14px;
+  width: 100%;
+}
+
+  /* Image dans la section projet */
+  .section-projet img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+  }
+
+  /* Bannière */
+  .Banner {
+      clip-path: none;
+      background-attachment: scroll;
+  }
+
